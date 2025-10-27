@@ -69,7 +69,7 @@ function Footer() {
           <a href="https://github.com/nicomvazquez">Github</a>
         </div>
         <div className="max-w-lg flex flex-col my-10 gap-2 justify-baseline">
-          <img className="w-20" src="./src/img/logo-vn.png" alt="" />
+          <img className="w-20" src="./img/logo-vn.png" alt="" />
           <p>&copy; nicomvazquez</p>
         </div>
       </div>

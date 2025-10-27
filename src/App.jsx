@@ -15,7 +15,7 @@ function App() {
           </p>
           <div className="flex gap-5">
             <a
-              href="./src/img/cv nicolas vazquez.pdf" download
+              href="./img/cv nicolas vazquez.pdf" download
               className="inline-block px-8 py-3 bg-transparent border border-gray-600 text-gray-300 font-medium rounded-lg transition duration-200 hover:bg-gray-800 hover:border-[#ffc700]"
             >
               Descargar CV
@@ -102,7 +102,7 @@ function App() {
         >
           {/* Primer InfoCard */}
           <InfoCard
-            img={"./src/img/intervencion-bcra.webp"}
+            img={"./img/intervencion-bcra.webp"}
             description={
               "En un esfuerzo por redefinir el rumbo económico, el Banco Central de la República Argentina (BCRA) ha implementado nuevas medidas clave. Estas iniciativas buscan principalmente fortalecer las reservas internacionales y consolidar el control de los agregados monetarios. El objetivo es claro: avanzar hacia una desinflación duradera y una mayor estabilidad cambiaria, sentando las bases para un crecimiento económico más sólido en Argentina."
             }
@@ -113,7 +113,7 @@ function App() {
 
           {/* Segundo InfoCard */}
           <InfoCard
-            img={"./src/img/medidas-bcra.webp"}
+            img={"./img/medidas-bcra.webp"}
             description={
               "En un esfuerzo por redefinir el rumbo económico, el Banco Central de la República Argentina (BCRA) ha implementado nuevas medidas clave. Estas iniciativas buscan principalmente fortalecer las reservas internacionales y consolidar el control de los agregados monetarios. El objetivo es claro: avanzar hacia una desinflación duradera y una mayor estabilidad cambiaria, sentando las bases para un crecimiento económico más sólido en Argentina."
             }
@@ -124,7 +124,7 @@ function App() {
 
           {/* Añadimos un tercer Card para demostrar el Grid */}
           <InfoCard
-            img={"./src/img/dolarizacion-endogena.webp"}
+            img={"./img/dolarizacion-endogena.webp"}
             description={
               "La reforma de ARCA no solo simplifica impuestos: también marca el inicio de una dolarización endógena. Al relajar controles y habilitar el uso libre de dólares no declarados, se debilita el rol exclusivo del peso y se abre paso a una economía donde el dólar gana terreno por decisión del mercado."
             }
@@ -196,7 +196,7 @@ function App() {
         <div className="w-full rounded-xl overflow-hidden bg-gray-900 shadow-lg border border-gray-700 transform transition duration-300 shadow-[#ffc700]/10">
           <img
             className="w-full h-48 object-cover"
-            src="./src/img/bot-trading.png"
+            src="./img/bot-trading.png"
             alt="Imagen del informe"
           />
           <div className="p-6 ">
@@ -245,7 +245,7 @@ function App() {
         >
           {/* Primer InfoCard */}
           <InfoCard
-            img={"./src/img/calcu-bonos.png"}
+            img={"./img/calcu-bonos.png"}
             description={
               "Calculadora de bonos soberanos, calculos de TIR y flujos de fondos"
             }
@@ -256,7 +256,7 @@ function App() {
 
           {/* Segundo InfoCard */}
           <InfoCard
-            img={"./src/img/calcu-lecaps.png"}
+            img={"./img/calcu-lecaps.png"}
             description={"Calculadora de LECAPs"}
             url={
               "https://docs.google.com/spreadsheets/d/1fUOVgemeY4AtpKDFp2G5iwxwdtG3fuUqpoFfRsfpPUI/edit?usp=sharing"
@@ -265,7 +265,7 @@ function App() {
 
           {/* Añadimos un tercer Card para demostrar el Grid */}
           <InfoCard
-            img={"./src/img/indicadores.png"}
+            img={"./img/indicadores.png"}
             description={"Indicadores personalizados para TradingWView"}
             url={"https://github.com/nicomvazquez/indicadores-trading"}
           />
@@ -297,7 +297,7 @@ function App() {
           </div>
           <div className="w-4/5  hidden sm:block">
             <img
-              src="./src/img/grafico.png"
+              src="./img/grafico.png"
               alt="Imagen de proyecto"
               // h-full y object-cover son clave para que la imagen ocupe el espacio
               className="w-full h-full object-cover"
