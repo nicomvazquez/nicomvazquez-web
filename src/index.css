@@ -1,0 +1,16 @@
+/* index.css */
+@import "tailwindcss";
+
+/* Establecer el color de fondo oscuro de tu wireframe */
+body {
+    background-color: #000208; /* Fondo completamente negro */
+    color: #ffffff; /* Texto blanco para el contraste */
+    font-family: sans-serif; /* Fuente base */
+}
+
+/* El elemento raíz de React (donde se monta <App />) */
+#root {
+    /* Ocupa el 100% del viewport */
+    min-height: 100vh; 
+    width: 100%;
+}
