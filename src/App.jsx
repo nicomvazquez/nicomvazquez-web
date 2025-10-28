@@ -112,24 +112,24 @@ function App() {
           {/* Right Column - Visual */}
           <div className="flex items-center justify-center lg:justify-end">
             <div className="relative">
-              {/* Main avatar */}
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-linear-to-br from-[#ffc700]/20 to-gray-800 p-1 shadow-2xl shadow-[#ffc700]/20">
+              {/* Main avatar - Smaller on mobile */}
+              <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full bg-linear-to-br from-[#ffc700]/20 to-gray-800 p-1 shadow-2xl shadow-[#ffc700]/20">
                 <div className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center border border-[#ffc700]/30 relative overflow-hidden">
-                  <span className="text-8xl lg:text-9xl font-bold text-[#ffc700]">NV</span>
+                  <span className="text-6xl md:text-8xl lg:text-9xl font-bold text-[#ffc700]">NV</span>
                   {/* Decorative elements */}
                   <div className="absolute top-4 right-4 w-4 h-4 bg-[#ffc700] rounded-full animate-pulse"></div>
                   <div className="absolute bottom-8 left-8 w-3 h-3 bg-[#ffc700]/60 rounded-full animate-pulse delay-1000"></div>
                 </div>
               </div>
               
-              {/* Floating elements */}
-              <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#ffc700]/10 rounded-full flex items-center justify-center border border-[#ffc700]/30 backdrop-blur-sm">
+              {/* Floating elements - Hidden on mobile */}
+              <div className="hidden md:flex absolute -top-4 -right-4 w-16 h-16 bg-[#ffc700]/10 rounded-full items-center justify-center border border-[#ffc700]/30 backdrop-blur-sm">
                 <span className="text-2xl">📊</span>
               </div>
-              <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-[#ffc700]/10 rounded-full flex items-center justify-center border border-[#ffc700]/30 backdrop-blur-sm">
+              <div className="hidden md:flex absolute -bottom-4 -left-4 w-12 h-12 bg-[#ffc700]/10 rounded-full items-center justify-center border border-[#ffc700]/30 backdrop-blur-sm">
                 <span className="text-lg">💼</span>
               </div>
-              <div className="absolute top-1/2 -left-8 w-10 h-10 bg-[#ffc700]/10 rounded-full flex items-center justify-center border border-[#ffc700]/30 backdrop-blur-sm">
+              <div className="hidden md:flex absolute top-1/2 -left-8 w-10 h-10 bg-[#ffc700]/10 rounded-full items-center justify-center border border-[#ffc700]/30 backdrop-blur-sm">
                 <span className="text-sm">🚀</span>
               </div>
             </div>
@@ -148,9 +148,9 @@ function App() {
       </section>
 
       <section id="about" className="py-20 relative">
-        {/* Background decoration */}
-        <div className="absolute top-10 right-10 w-64 h-64 bg-[#ffc700]/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 left-10 w-48 h-48 bg-[#ffc700]/3 rounded-full blur-2xl"></div>
+        {/* Background decoration - Hidden on mobile */}
+        <div className="hidden md:block absolute top-10 right-10 w-64 h-64 bg-[#ffc700]/5 rounded-full blur-3xl"></div>
+        <div className="hidden md:block absolute bottom-10 left-10 w-48 h-48 bg-[#ffc700]/3 rounded-full blur-2xl"></div>
         
         <div className="relative z-10">
           {/* Section Header */}
@@ -260,8 +260,8 @@ function App() {
         id="reports"
         className="py-20 w-full max-w-6xl mx-auto text-white relative"
       >
-        {/* Background decoration */}
-        <div className="absolute top-10 left-10 w-32 h-32 bg-[#ffc700]/5 rounded-full blur-2xl"></div>
+        {/* Background decoration - Hidden on mobile */}
+        <div className="hidden md:block absolute top-10 left-10 w-32 h-32 bg-[#ffc700]/5 rounded-full blur-2xl"></div>
         
         <div className="relative z-10">
           {/* Section Header */}
@@ -329,8 +329,8 @@ function App() {
       </section>
 
       <section id="news" className="py-20 relative">
-        {/* Background decoration */}
-        <div className="absolute top-10 right-10 w-48 h-48 bg-[#ffc700]/5 rounded-full blur-2xl"></div>
+        {/* Background decoration - Hidden on mobile */}
+        <div className="hidden md:block absolute top-10 right-10 w-48 h-48 bg-[#ffc700]/5 rounded-full blur-2xl"></div>
         
         <div className="relative z-10">
           <div className="max-w-4xl mx-auto bg-gray-900/50 backdrop-blur-sm p-8 sm:p-12 rounded-3xl border border-gray-700/50 hover:border-[#ffc700]/30 transition-all duration-500 shadow-2xl shadow-[#ffc700]/10">
@@ -370,8 +370,8 @@ function App() {
       </section>
 
       <section id="proyects" className="py-20 relative">
-        {/* Background decoration */}
-        <div className="absolute bottom-10 left-10 w-64 h-64 bg-[#ffc700]/5 rounded-full blur-3xl"></div>
+        {/* Background decoration - Hidden on mobile */}
+        <div className="hidden md:block absolute bottom-10 left-10 w-64 h-64 bg-[#ffc700]/5 rounded-full blur-3xl"></div>
         
         <div className="relative z-10">
           {/* Section Header */}
