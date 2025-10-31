@@ -9,16 +9,19 @@ function App() {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
     <div className="max-w-5xl m-auto px-3">
-      <section id="home" className="min-h-screen flex items-center relative pt-20 pb-10">
+      <section
+        id="home"
+        className="min-h-screen flex items-center relative pt-20 pb-10"
+      >
         {/* Gradient background effect */}
         <div className="absolute inset-0 bg-linear-to-br from-[#ffc700]/5 via-transparent to-transparent pointer-events-none"></div>
-        
+
         <div className="w-full grid lg:grid-cols-2 gap-12 items-center relative z-10">
           {/* Left Column - Content */}
           <div className="space-y-8 text-left">
@@ -27,7 +30,7 @@ function App() {
               <span className="w-2 h-2 bg-[#ffc700] rounded-full animate-pulse"></span>
               Disponible para nuevos proyectos
             </div>
-            
+
             {/* Main heading */}
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
@@ -37,21 +40,22 @@ function App() {
                 </span>
               </h1>
               <div className="text-xl md:text-2xl text-gray-300 font-medium">
-                Lic. Economía y Finanzas | Trader | Programador
+                Lic. Economía y Finanzas | Trader | Programador | Analista de
+                datos
               </div>
             </div>
-            
+
             {/* Description */}
             <p className="text-gray-400 text-lg leading-relaxed max-w-xl">
-              Especialista en análisis financiero y desarrollo de soluciones tecnológicas 
-              para el sector de inversiones. Combinando experiencia práctica con innovación 
-              para generar valor real en el mercado.
+              Especialista en análisis financiero y desarrollo de soluciones
+              tecnológicas para el sector de inversiones. Combinando experiencia
+              práctica con innovación para generar valor real en el mercado.
             </p>
-            
-            {/* Stats */}
+
+            {/* Stats 
             <div className="flex gap-8 py-4">
               <div className="text-center">
-                <div className="text-2xl font-bold text-[#ffc700]">5+</div>
+                <div className="text-2xl font-bold text-[#ffc700]">2+</div>
                 <div className="text-sm text-gray-400">Años Experiencia</div>
               </div>
               <div className="text-center">
@@ -62,26 +66,27 @@ function App() {
                 <div className="text-2xl font-bold text-[#ffc700]">100+</div>
                 <div className="text-sm text-gray-400">Análisis</div>
               </div>
-            </div>
-            
+            </div> */}
+
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
-                href="./img/cv nicolas vazquez.pdf" 
-                download
+                href="https://drive.google.com/file/d/19mleFKvi6M-LRg9yg4JKBMh-g1ZhYAE-/view?usp=sharing"
                 className="group flex items-center justify-center gap-3 px-8 py-4 bg-[#ffc700] hover:bg-[#ffb700] text-black font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#ffc700]/25"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaDownload className="group-hover:animate-bounce" />
                 Descargar CV
               </a>
               <button
-                onClick={() => scrollToSection('advisor')}
+                onClick={() => scrollToSection("advisor")}
                 className="px-8 py-4 bg-transparent border-2 border-[#ffc700] text-[#ffc700] hover:bg-[#ffc700] hover:text-black font-semibold rounded-lg transition-all duration-300 hover:scale-105"
               >
                 Contactar
               </button>
             </div>
-            
+
             {/* Social links */}
             <div className="flex gap-4 pt-4">
               <a
@@ -108,20 +113,22 @@ function App() {
               </a>
             </div>
           </div>
-          
+
           {/* Right Column - Visual */}
           <div className="flex items-center justify-center lg:justify-end">
             <div className="relative">
               {/* Main avatar - Smaller on mobile */}
               <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full bg-linear-to-br from-[#ffc700]/20 to-gray-800 p-1 shadow-2xl shadow-[#ffc700]/20">
                 <div className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center border border-[#ffc700]/30 relative overflow-hidden">
-                  <span className="text-6xl md:text-8xl lg:text-9xl font-bold text-[#ffc700]">NV</span>
+                  <span className="text-6xl md:text-8xl lg:text-9xl font-bold text-[#ffc700]">
+                    NV
+                  </span>
                   {/* Decorative elements */}
                   <div className="absolute top-4 right-4 w-4 h-4 bg-[#ffc700] rounded-full animate-pulse"></div>
                   <div className="absolute bottom-8 left-8 w-3 h-3 bg-[#ffc700]/60 rounded-full animate-pulse delay-1000"></div>
                 </div>
               </div>
-              
+
               {/* Floating elements - Hidden on mobile */}
               <div className="hidden md:flex absolute -top-4 -right-4 w-16 h-16 bg-[#ffc700]/10 rounded-full items-center justify-center border border-[#ffc700]/30 backdrop-blur-sm">
                 <span className="text-2xl">📊</span>
@@ -135,11 +142,11 @@ function App() {
             </div>
           </div>
         </div>
-        
+
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <button
-            onClick={() => scrollToSection('about')}
+            onClick={() => scrollToSection("about")}
             className="text-[#ffc700] hover:text-white transition-colors duration-300"
           >
             <FaChevronDown size={24} />
@@ -151,12 +158,12 @@ function App() {
         {/* Background decoration - Hidden on mobile */}
         <div className="hidden md:block absolute top-10 right-10 w-64 h-64 bg-[#ffc700]/5 rounded-full blur-3xl"></div>
         <div className="hidden md:block absolute bottom-10 left-10 w-48 h-48 bg-[#ffc700]/3 rounded-full blur-2xl"></div>
-        
+
         <div className="relative z-10">
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-linear-to-r from-white to-gray-400 bg-clip-text text-transparent">
-              Sobre mí
+              Quien soy
             </h2>
             <div className="w-24 h-1 bg-[#ffc700] mx-auto rounded-full"></div>
           </div>
@@ -169,13 +176,15 @@ function App() {
                 <div className="flex items-start gap-4">
                   <div className="w-2 h-12 lg:h-16 bg-[#ffc700] rounded-full shrink-0 mt-2"></div>
                   <div>
-                    <h3 className="text-lg lg:text-xl font-semibold text-[#ffc700] mb-3 lg:mb-4">Formación y Experiencia</h3>
+                    <h3 className="text-lg lg:text-xl font-semibold text-[#ffc700] mb-3 lg:mb-4">
+                      Formación y Experiencia
+                    </h3>
                     <p className="text-gray-300 leading-relaxed text-sm lg:text-base">
-                      Soy estudiante de Economía y Finanzas, apasionado por los mercados
-                      financieros y el análisis de inversiones. Me interesa entender en
-                      profundidad cómo funcionan los mercados para anticipar movimientos y
-                      tomar decisiones basadas en información sólida y estrategias
-                      fundamentadas.
+                      Soy estudiante de Economía y Finanzas, apasionado por los
+                      mercados financieros y el análisis de inversiones. Me
+                      interesa entender en profundidad cómo funcionan los
+                      mercados para anticipar movimientos y tomar decisiones
+                      basadas en información sólida y estrategias fundamentadas.
                     </p>
                   </div>
                 </div>
@@ -185,12 +194,20 @@ function App() {
                 <div className="flex items-start gap-4">
                   <div className="w-2 h-12 lg:h-16 bg-[#ffc700] rounded-full shrink-0 mt-2"></div>
                   <div>
-                    <h3 className="text-lg lg:text-xl font-semibold text-[#ffc700] mb-3 lg:mb-4">Desarrollo Tecnológico</h3>
+                    <h3 className="text-lg lg:text-xl font-semibold text-[#ffc700] mb-3 lg:mb-4">
+                      Desarrollo Tecnológico
+                    </h3>
                     <p className="text-gray-300 leading-relaxed text-sm lg:text-base">
-                      Además de mi formación en finanzas, cuento con experiencia en
-                      desarrollo de software, lo que me ha permitido crear herramientas
-                      útiles para el sector, incluyendo bots de trading, indicadores
-                      personalizados y sistemas de automatización de operaciones.
+                      Además de mi formación en finanzas, poseo experiencia en
+                      desarrollo de software y análisis de datos aplicados al
+                      sector financiero. He diseñado y programado herramientas
+                      orientadas a la automatización de procesos, incluyendo
+                      bots de trading, indicadores personalizados y sistemas de
+                      gestión de operaciones. Estas soluciones integran análisis
+                      cuantitativo, manejo de datos y algoritmos de decisión
+                      para optimizar la eficiencia, reducir errores operativos y
+                      mejorar la precisión en la ejecución de estrategias
+                      financieras.
                     </p>
                   </div>
                 </div>
@@ -200,12 +217,15 @@ function App() {
                 <div className="flex items-start gap-4">
                   <div className="w-2 h-12 lg:h-16 bg-[#ffc700] rounded-full shrink-0 mt-2"></div>
                   <div>
-                    <h3 className="text-lg lg:text-xl font-semibold text-[#ffc700] mb-3 lg:mb-4">Educación Financiera</h3>
+                    <h3 className="text-lg lg:text-xl font-semibold text-[#ffc700] mb-3 lg:mb-4">
+                      Educación Financiera
+                    </h3>
                     <p className="text-gray-300 leading-relaxed text-sm lg:text-base">
-                      La educación financiera es otro eje de mi trabajo: me interesa
-                      compartir conocimientos de manera clara y accesible para que más
-                      personas puedan gestionar sus finanzas de forma inteligente y tomar
-                      decisiones informadas.
+                      La educación financiera es otro eje de mi trabajo: me
+                      interesa compartir conocimientos de manera clara y
+                      accesible para que más personas puedan gestionar sus
+                      finanzas de forma inteligente y tomar decisiones
+                      informadas.
                     </p>
                   </div>
                 </div>
@@ -216,21 +236,34 @@ function App() {
             <div className="space-y-6 lg:space-y-8">
               {/* Skills */}
               <div className="bg-gray-900/50 backdrop-blur-sm p-6 lg:p-8 rounded-2xl border border-gray-700/50">
-                <h3 className="text-xl lg:text-2xl font-semibold text-white mb-4 lg:mb-6">Especialidades</h3>
+                <h3 className="text-xl lg:text-2xl font-semibold text-white mb-4 lg:mb-6">
+                  Habilidades tecnicas
+                </h3>
                 <div className="space-y-4">
                   {[
-                    { skill: "Análisis Financiero", level: "95%" },
-                    { skill: "Trading & Inversiones", level: "90%" },
-                    { skill: "Desarrollo de Software", level: "85%" },
-                    { skill: "Educación Financiera", level: "88%" }
+                    { skill: "Análisis Financiero", level: "100%" },
+                    {
+                      skill: "Gestión y diversificación de carteras",
+                      level: "100%",
+                    },
+                    { skill: "Bloomberg Terminal", level: "100%" },
+                    { skill: "Python", level: "100%" },
+                    { skill: "SQL", level: "100%" },
+                    { skill: "Excel avanzado", level: "100%" },
+                    { skill: "Power BI", level: "100%" },
+                    { skill: "Data", level: "100%" },
                   ].map((item, index) => (
                     <div key={index}>
                       <div className="flex justify-between mb-2">
-                        <span className="text-gray-300 text-sm lg:text-base">{item.skill}</span>
-                        <span className="text-[#ffc700] text-sm lg:text-base">{item.level}</span>
+                        <span className="text-gray-300 text-sm lg:text-base">
+                          {item.skill}
+                        </span>
+                        {/*<span className="text-[#ffc700] text-sm lg:text-base">
+                          {item.level}
+                        </span>*/}
                       </div>
                       <div className="w-full bg-gray-700 rounded-full h-2">
-                        <div 
+                        <div
                           className="bg-linear-to-r from-[#ffc700] to-[#ffb700] h-2 rounded-full transition-all duration-1000 ease-out"
                           style={{ width: item.level }}
                         ></div>
@@ -240,7 +273,7 @@ function App() {
                 </div>
               </div>
 
-              {/* Quick Stats */}
+              {/* Quick Stats 
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-gray-900/50 backdrop-blur-sm p-4 lg:p-6 rounded-xl border border-gray-700/50 text-center hover:scale-105 transition-transform duration-300">
                   <div className="text-2xl lg:text-3xl font-bold text-[#ffc700] mb-2">5+</div>
@@ -250,7 +283,7 @@ function App() {
                   <div className="text-2xl lg:text-3xl font-bold text-[#ffc700] mb-2">50+</div>
                   <div className="text-gray-300 text-xs lg:text-sm">Proyectos Completados</div>
                 </div>
-              </div>
+              </div>*/}
             </div>
           </div>
         </div>
@@ -262,7 +295,7 @@ function App() {
       >
         {/* Background decoration - Hidden on mobile */}
         <div className="hidden md:block absolute top-10 left-10 w-32 h-32 bg-[#ffc700]/5 rounded-full blur-2xl"></div>
-        
+
         <div className="relative z-10">
           {/* Section Header */}
           <div className="text-center mb-16">
@@ -271,7 +304,8 @@ function App() {
             </h2>
             <div className="w-24 h-1 bg-[#ffc700] mx-auto rounded-full"></div>
             <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-              Análisis profundos del mercado financiero argentino con perspectivas estratégicas y datos actualizados.
+              Análisis profundos del mercado financiero argentino con
+              perspectivas estratégicas y datos actualizados.
             </p>
           </div>
 
@@ -331,7 +365,7 @@ function App() {
       <section id="news" className="py-20 relative">
         {/* Background decoration - Hidden on mobile */}
         <div className="hidden md:block absolute top-10 right-10 w-48 h-48 bg-[#ffc700]/5 rounded-full blur-2xl"></div>
-        
+
         <div className="relative z-10">
           <div className="max-w-4xl mx-auto bg-gray-900/50 backdrop-blur-sm p-8 sm:p-12 rounded-3xl border border-gray-700/50 hover:border-[#ffc700]/30 transition-all duration-500 shadow-2xl shadow-[#ffc700]/10">
             <div className="text-center space-y-6">
@@ -339,18 +373,23 @@ function App() {
               <div className="w-20 h-20 bg-[#ffc700]/20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-3xl">📊</span>
               </div>
-              
+
               <h2 className="text-3xl md:text-4xl font-bold bg-linear-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 Newsletter Semanal
               </h2>
-              
+
               <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto">
-                Suscríbete a mi newsletter semanal y recibe un resumen de las noticias clave del mercado 
-                junto con un análisis práctico para tus decisiones de inversión. Mantente informado y un paso adelante cada semana.
+                Suscríbete a mi newsletter semanal y recibe un resumen de las
+                noticias clave del mercado junto con un análisis práctico para
+                tus decisiones de inversión. Mantente informado y un paso
+                adelante cada semana.
               </p>
-              
+
               <div className="pt-4">
-                <a
+                <h2 className="text-3xl md:text-4xl font-bold bg-linear-to-r from-[#ffc700] to-[#ffb700] bg-clip-text text-transparent">
+                Proximamente...
+              </h2>
+                {/*<a
                   href="https://www.linkedin.com/in/nicolasvazquezpizzi/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -358,11 +397,12 @@ function App() {
                 >
                   <span>Suscribirse Ahora</span>
                   <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-200" />
-                </a>
+                </a>*/}
               </div>
-              
+
               <p className="text-sm text-gray-500">
-                ✓ Sin spam &nbsp;&nbsp; ✓ Contenido de calidad &nbsp;&nbsp; ✓ Cancela cuando quieras
+                ✓ Sin spam &nbsp;&nbsp; ✓ Contenido de calidad &nbsp;&nbsp; ✓
+                Cancela cuando quieras
               </p>
             </div>
           </div>
@@ -372,7 +412,7 @@ function App() {
       <section id="proyects" className="py-20 relative">
         {/* Background decoration - Hidden on mobile */}
         <div className="hidden md:block absolute bottom-10 left-10 w-64 h-64 bg-[#ffc700]/5 rounded-full blur-3xl"></div>
-        
+
         <div className="relative z-10">
           {/* Section Header */}
           <div className="text-center mb-16">
@@ -381,7 +421,8 @@ function App() {
             </h2>
             <div className="w-24 h-1 bg-[#ffc700] mx-auto rounded-full"></div>
             <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-              Soluciones tecnológicas innovadoras para el sector financiero y herramientas de análisis especializadas.
+              Soluciones tecnológicas innovadoras para el sector financiero y
+              herramientas de análisis especializadas.
             </p>
           </div>
 
@@ -398,7 +439,7 @@ function App() {
                   />
                   <div className="absolute inset-0 bg-linear-to-r from-black/20 to-transparent"></div>
                 </div>
-                
+
                 {/* Content */}
                 <div className="lg:w-1/2 p-6 lg:p-8 flex flex-col justify-center space-y-4 lg:space-y-6">
                   <div className="flex items-center gap-3">
@@ -407,25 +448,36 @@ function App() {
                       Bot de Trading Automático
                     </h3>
                   </div>
-                  
+
                   <div className="space-y-3 lg:space-y-4">
                     <p className="text-gray-300 leading-relaxed text-sm lg:text-base">
-                      Diseñé un bot de trading automatizado que opera en los mercados financieros siguiendo 
-                      estrategias definidas y datos en tiempo real. Permite ejecutar órdenes de compra y venta 
-                      de manera automática, gestionar riesgos mediante stop-loss y take-profit.
+                      Desarrollé un bot de trading automatizado para el mercado
+                      de criptomonedas, basado en estrategias cuantitativas y
+                      análisis de datos en tiempo real. La herramienta ejecuta
+                      operaciones de compra y venta de forma autónoma, incorpora
+                      gestión de riesgo mediante stop-loss y take-profit, y
+                      optimiza la ejecución según condiciones de mercado.
                     </p>
-                    
+
                     <p className="text-gray-300 leading-relaxed text-sm lg:text-base">
-                      Combina conocimientos de finanzas y desarrollo de software, integrando indicadores 
-                      personalizados y herramientas de automatización para maximizar la eficiencia y 
-                      reducir errores humanos.
+                      Integra conocimientos de finanzas, análisis de datos y
+                      desarrollo de software, utilizando indicadores
+                      personalizados y procesos automatizados para maximizar la
+                      eficiencia operativa, minimizar errores y mejorar la toma
+                      de decisiones.
                     </p>
                   </div>
-                  
+
                   {/* Features */}
                   <div className="flex flex-wrap gap-2">
-                    {['Python', 'APIs', 'Machine Learning', 'Trading'].map((tech, index) => (
-                      <span 
+                    {[
+                      "Python",
+                      "APIs",
+                      "SQL",
+                      "Machine Learning",
+                      "Trading",
+                    ].map((tech, index) => (
+                      <span
                         key={index}
                         className="px-2 lg:px-3 py-1 bg-[#ffc700]/20 text-[#ffc700] text-xs lg:text-sm rounded-full border border-[#ffc700]/30"
                       >
@@ -433,7 +485,7 @@ function App() {
                       </span>
                     ))}
                   </div>
-                  
+
                   <a
                     href="https://github.com/nicomvazquez/trading-bot-crypto"
                     target="_blank"
@@ -453,21 +505,31 @@ function App() {
             <InfoCard
               img={"./img/calcu-bonos.png"}
               title="Calculadora de Bonos Soberanos"
-              description={"Herramienta especializada para cálculos de TIR y flujos de fondos de bonos soberanos argentinos. Incluye análisis de riesgo y rentabilidad."}
-              url={"https://docs.google.com/spreadsheets/d/1k_bDEWPKayXkWx6Rz4eJfCrNt9a65lTQ1naOQqzS-yI/edit?usp=sharing"}
+              description={
+                "Herramienta especializada para cálculos de TIR y flujos de fondos de bonos soberanos argentinos. Incluye análisis de riesgo y rentabilidad."
+              }
+              url={
+                "https://docs.google.com/spreadsheets/d/1k_bDEWPKayXkWx6Rz4eJfCrNt9a65lTQ1naOQqzS-yI/edit?usp=sharing"
+              }
             />
 
             <InfoCard
               img={"./img/calcu-lecaps.png"}
               title="Calculadora de LECAPs"
-              description={"Calculadora especializada para LECAPs (Letras Capitalizables del BCRA) con análisis de rendimiento y comparativas del mercado."}
-              url={"https://docs.google.com/spreadsheets/d/1fUOVgemeY4AtpKDFp2G5iwxwdtG3fuUqpoFfRsfpPUI/edit?usp=sharing"}
+              description={
+                "Calculadora especializada para LECAPs (Letras Capitalizables del BCRA) con análisis de rendimiento y comparativas del mercado."
+              }
+              url={
+                "https://docs.google.com/spreadsheets/d/1fUOVgemeY4AtpKDFp2G5iwxwdtG3fuUqpoFfRsfpPUI/edit?usp=sharing"
+              }
             />
 
             <InfoCard
               img={"./img/indicadores.png"}
               title="Indicadores Personalizados"
-              description={"Colección de indicadores técnicos personalizados para TradingView, optimizados para el análisis del mercado argentino."}
+              description={
+                "Colección de indicadores técnicos personalizados para TradingView, optimizados para el análisis del mercado argentino."
+              }
               url={"https://github.com/nicomvazquez/indicadores-trading"}
             />
           </div>
@@ -478,7 +540,7 @@ function App() {
         {/* Background decoration */}
         <div className="absolute top-10 right-10 w-48 h-48 bg-[#ffc700]/5 rounded-full blur-2xl"></div>
         <div className="absolute bottom-10 left-10 w-32 h-32 bg-[#ffc700]/3 rounded-full blur-xl"></div>
-        
+
         <div className="relative z-10">
           {/* Section Header */}
           <div className="text-center mb-16">
@@ -487,7 +549,8 @@ function App() {
             </h2>
             <div className="w-24 h-1 bg-[#ffc700] mx-auto rounded-full"></div>
             <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-              ¿Necesitas asesoramiento financiero profesional o soluciones tecnológicas personalizadas? Contáctame para una consulta.
+              ¿Necesitas asesoramiento financiero profesional o soluciones
+              tecnológicas personalizadas? Contáctame para una consulta.
             </p>
           </div>
 
@@ -503,27 +566,30 @@ function App() {
                         Contáctame como tu Asesor
                       </h3>
                     </div>
-                    
+
                     <p className="text-gray-300 text-lg leading-relaxed">
-                      Ofrezco asesoramiento financiero independiente, combinando experiencia práctica 
-                      con formación académica para brindar soluciones efectivas y estrategias fundamentadas.
+                      Ofrezco asesoramiento financiero independiente, combinando
+                      experiencia práctica con formación académica para brindar
+                      soluciones efectivas y estrategias fundamentadas.
                     </p>
                   </div>
 
                   {/* Services List */}
                   <div className="grid md:grid-cols-2 gap-4">
                     {[
-                      '📊 Análisis de Inversiones',
-                      '💼 Asesoramiento Financiero',
-                      '🤖 Soluciones Tecnológicas',
-                      '📈 Estrategias de Trading'
+                      "📊 Análisis de Inversiones",
+                      "💼 Asesoramiento Financiero",
+                      "🤖 Soluciones Tecnológicas",
+                      "📈 Estrategias de Trading",
                     ].map((service, index) => (
-                      <div 
+                      <div
                         key={index}
                         className="flex items-center gap-3 p-3 bg-gray-800/50 rounded-lg hover:bg-gray-800 transition-colors duration-300"
                       >
-                        <span className="text-lg">{service.split(' ')[0]}</span>
-                        <span className="text-gray-300">{service.substring(2)}</span>
+                        <span className="text-lg">{service.split(" ")[0]}</span>
+                        <span className="text-gray-300">
+                          {service.substring(2)}
+                        </span>
                       </div>
                     ))}
                   </div>
@@ -540,7 +606,7 @@ function App() {
                       <span>Contactar por LinkedIn</span>
                       <FaArrowRight className="group-hover/btn:translate-x-1 transition-transform duration-200" />
                     </a>
-                    
+
                     <a
                       href="mailto:vazquezpizzinicolas@gmail.com"
                       className="flex-1 inline-flex items-center justify-center gap-3 px-8 py-4 bg-transparent border-2 border-[#ffc700] text-[#ffc700] hover:bg-[#ffc700] hover:text-black font-semibold rounded-lg transition-all duration-300 hover:scale-105"
@@ -550,7 +616,7 @@ function App() {
                     </a>
                   </div>
                 </div>
-                
+
                 {/* Image */}
                 <div className="lg:w-2/5 relative min-h-[300px] lg:min-h-[500px]">
                   <img
